@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num, i;
+
+    num = 5; // Starting number for the table
+
+    do {
+        printf("Multiplication Table of %d:\n", num);
+        i = 1;
+        do {
+            printf("%d x %d = %d\n", num, i, num * i);
+            i++;
+        } while (i <= 10);
+        printf("\n");
+        num++;
+    } while (num <= 10);
+
+    return 0;
+}
