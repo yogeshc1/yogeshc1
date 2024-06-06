@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int rows, spaces, stars, i, j;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    for (i = 0; i < rows; i++) {
+        // Print spaces
+        for (spaces = 0; spaces < rows - i - 1; spaces++) {
+            printf(" ");
+        }
+
+        // Print stars
+        for (stars = 0; stars < 2 * i + 1; stars++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+ 
